@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/css/bulma.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <nav class="nav ">
+    <div class="nav-left">
+      <a class="nav-item is-brand" href="#">
+        <p id="titleShop" class="title"></p>
+      </a>
+   </div>
+  </nav>
+  <br>
+      <div class="container">
+        <div class="form is-horizontal">
+          <div class="control is-grouped">
+            <p class="control is-expanded">
+              <input class="input" type="text" id="desc" placeholder="Descrição">
+            </p>
+            <p class="control is-expanded">
+              <input class="input" type="text" id="qtd" placeholder="Quantidade">
+            </p>
+            <p class="control is-expanded">
+              <input class="input" type="text" id="valor" placeholder="Valor">
+            </p>
+            <span id="btnUpdate" style="display: none">
+              <span id="inputIDUpdate">
+              </span>
+              <button onclick="updateData();" class="button is-primary">Salvar</button>
+            <button onclick="resetForm();" class="button is-danger">Limpar</button>
+
+            </span>
+            <button id="btnAdd" onclick="addData();" class="button is-primary">Adcionar</button>
+          </div>
+        </div>
+        <div id="errors" style="display: none;"></div>
+        <br>
+        <table class="table" id="listTable"></table>
+      </div>
+      <script src="js/config.js"></script>
+      <script src="js/main.js"></script>
+
+  </body>
+</html>
